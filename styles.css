@@ -329,7 +329,7 @@
   to { opacity: 1; }
 }
 
-/* Media Responces */
+/* Media Screens */
 @media screen and (max-width: 768px) {
     .main__container{
         display: grid;

@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script src="../js/creed.js"></script>
+  <link rel="stylesheet" href="../styles/creed.css"/>
+</head>
 <style>
 body, html {
   height: 100%;
@@ -21,6 +25,14 @@ body, html {
     from{ opacity: 0; }
     to { opacity: 1; }
 }  
+
+@keyframes color {
+    0% {color: #39f;}
+     25% {color: #8bc5d1;}
+     50% {color: #f8cb4a;}
+     75% {color: #8bc5d1;}
+    100% {color: #39f;}
+}
 
 .creed2 {
   position: absolute;
@@ -71,7 +83,7 @@ body, html {
 <div class="creed">
 </div>
 <div class="creed2">
-  <h1>I believe in the habit of doing more than asked for</h1>
+  <h1 id="2">I believe in the habit of doing more than asked for</h1>
   <hr>
   <p>I've embodied this leadership creed since the conclusion of the TXT SCLA program. I have accomplished by recieving a task and going above and beyond. When i was told to create a outline for a personal statment, i wrote the entire statment. WHen given the task to organize one event for hispanic heritage month i organized four differnt workshops that the students enjoyed. </p>
 </div>
@@ -80,11 +92,18 @@ body, html {
 <div class="creed">
 </div>
 <div class="creed3">
-  <h1>I will Strive to strengthen my mind, body, and soul</h1>
+  <h1 id="3">I will Strive to strengthen my mind, body, and soul</h1>
   <hr>
   <p>I've embodied this leadership creed since the conclusion of the TXT SCLA program. I have accomplished this by doing daily assesments to myself. Tracking what i eat, do, and learn. This has allowed me to understand how i work and get alot more learning in. Which has overall helped my mental heath. Now with all this in mind im setting goals to get closer to be a full stack developer.</p>
 </div>
 </div>
+
+<button onclick="start()">
+  Start
+</button>
+<button onclick="off()">
+  End 
+</button>
 
 </body>
 </html>
